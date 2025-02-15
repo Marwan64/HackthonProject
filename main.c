@@ -1,4 +1,9 @@
 int main(void) {
-	djsdf
+	
+	//Once main game is finished with all mehtods use main just for a play game method
+
+
+
+
 	return 0;
 }
