@@ -1,18 +1,22 @@
 #include "Header.h"
 
 
-int display_menu() {
-	printf("1. Playing Mental Math");
-	printf("2. Exist");
+void playGame()
+{
 }
 
-//TODO Marwarn must complete his code
-int get_choice() {
+//Printd out the menu and prompts user for which option they would like to select from.
+int menu()
+{
 	int choice = 0;
+
+	printf("1. Playing Mental Math \n2. Exit the game\n");
 	scanf("%d", &choice);
-	return 0;
+
+	return choice;
 }
 
+//Returns 1 if user answers correctly and 0 if otherwise. Each level is representative of the number of digits that can appear in a question.
 int addition_problem_level_1(int* score) {
 	int num1 = rand() % 9 + 1;
 	int num2 = rand() % 9 + 1;
@@ -32,7 +36,6 @@ int addition_problem_level_1(int* score) {
 		return 0;
 	}
 }
-
 int addition_problem_level_2(int* score) {
 	int num1 = rand() % 99 + 1;
 	int num2 = rand() % 99 + 1;
@@ -52,7 +55,6 @@ int addition_problem_level_2(int* score) {
 		return 0;
 	}
 }
-
 int addition_problem_level_3(int* score) {
 	int num1 = rand() % 999 + 1;
 	int num2 = rand() % 999 + 1;
@@ -72,3 +74,4 @@ int addition_problem_level_3(int* score) {
 		return 0;
 	}
 }
+
