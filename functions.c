@@ -1,4 +1,4 @@
-
+#include "Header.h"
 
 int addition_problem_level_1(int* score) {
 	int num1 = rand() % 9 + 1;
