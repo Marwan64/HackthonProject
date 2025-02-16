@@ -3,7 +3,18 @@
 
 void playGame()
 {
+	int score = 0, wrong_answer = 0, modifier = 2;
+	while (wrong_answer < 3)
+	{
+		//logic must be filled out
+	}
 }
+
+void print_result(int point)
+{
+	printf("game over your point is %d", point);
+}
+
 
 //Printd out the menu and prompts user for which option they would like to select from.
 int menu()
@@ -23,10 +34,10 @@ int addition_problem_level_1(int* score) {
 
 	int answer = num1 + num2;
 	printf("The problem is %d + %d, what is the answer? \n");
-	int reponce;
-	scanf(%d, &reponce);
-	if (respince == answer) {
-		&score += 5;
+	int responce;
+	scanf("%d", &responce);
+	if (responce == answer) {
+		score += 5;
 		printf("Correct! \n");
 		return 1;
 	}
@@ -42,10 +53,10 @@ int addition_problem_level_2(int* score) {
 
 	int answer = num1 + num2;
 	printf("The problem is %d + %d, what is the answer? \n");
-	int reponce;
-	scanf(% d, &reponce);
-	if (respince == answer) {
-		&score += 10;
+	int responce;
+	scanf("%d", &responce);
+	if (responce == answer) {
+		score += 10;
 		printf("Correct! \n");
 		return 1;
 	}
@@ -60,11 +71,11 @@ int addition_problem_level_3(int* score) {
 	int num2 = rand() % 999 + 1;
 
 	int answer = num1 + num2;
-	printf("The problem is %d + %d, what is the answer? \n");
-	int reponce;
-	scanf(% d, &reponce);
-	if (respince == answer) {
-		&score += 20;
+	printf("The problem is %d + %d, what is the answer? \n", num1, num2);
+	int responce;
+	scanf("%d", &responce);
+	if (responce == answer) {
+		score += 20;
 		printf("Correct! \n");
 		return 1;
 	}
@@ -74,4 +85,66 @@ int addition_problem_level_3(int* score) {
 		return 0;
 	}
 }
+
+int subtraction_problem_level_1(int* score) {
+	int num1 = rand() % 9 + 1;
+	int num2 = rand() % 9 + 1;
+
+	int answer = num1 - num2;
+	printf("The problem is %d + %d, what is the answer? \n", num1, num2);
+	int responce;
+	scanf("%d", &responce);
+	if (answer == responce)
+	{
+		score += 5;
+		printf("Correct! \n");
+		return 1;
+	}
+	else
+	{
+		printf("Sorry that incorrect!\n");
+		return 0;
+	}
+}
+int subtraction_problem_level_2(int* score) {
+	int num1 = rand() % 99 + 1;
+	int num2 = rand() % 99 + 1;
+
+	int answer = num1 - num2;
+	printf("The problem is %d + %d, what is the answer? \n", num1, num2);
+	int responce;
+	scanf("%d", &responce);
+	if (answer == responce)
+	{
+		score += 10;
+		printf("Correct! \n");
+		return 1;
+	}
+	else
+	{
+		printf("Sorry that incorrect!\n");
+		return 0;
+	}
+}
+int subtraction_problem_level_3(int* score) {
+	int num1 = rand() % 999 + 1;
+	int num2 = rand() % 999 + 1;
+
+	int answer = num1 - num2;
+	printf("The problem is %d + %d, what is the answer? \n", num1, num2);
+	int responce;
+	scanf("%d", &responce);
+	if (answer == responce)
+	{
+		score += 20;
+		printf("Correct! \n");
+		return 1;
+	}
+	else
+	{
+		printf("Sorry that incorrect!\n");
+		return 0;
+	}
+}
+
 
