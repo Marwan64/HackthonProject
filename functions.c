@@ -113,7 +113,7 @@ int subtraction_problem_level_1(int* score) {
 	int num2 = rand() % 9 + 1;
 
 	int answer = num1 - num2;
-	printf("The problem is %d + %d, what is the answer? \n", num1, num2);
+	printf("The problem is %d - %d, what is the answer? \n", num1, num2);
 	int responce;
 	scanf("%d", &responce);
 	if (answer == responce)
@@ -133,7 +133,7 @@ int subtraction_problem_level_2(int* score) {
 	int num2 = rand() % 99 + 1;
 
 	int answer = num1 - num2;
-	printf("The problem is %d + %d, what is the answer? \n", num1, num2);
+	printf("The problem is %d - %d, what is the answer? \n", num1, num2);
 	int responce;
 	scanf("%d", &responce);
 	if (answer == responce)
@@ -153,7 +153,7 @@ int subtraction_problem_level_3(int* score) {
 	int num2 = rand() % 999 + 1;
 
 	int answer = num1 - num2;
-	printf("The problem is %d + %d, what is the answer? \n", num1, num2);
+	printf("The problem is %d - %d, what is the answer? \n", num1, num2);
 	int responce;
 	scanf("%d", &responce);
 	if (answer == responce)
@@ -169,41 +169,63 @@ int subtraction_problem_level_3(int* score) {
 	}
 }
 
-
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-int timer() {
-	srand(time(0));  // Seed the random number generator with the current time
-
-	for (int i = 0; i < 5; i++) {
-		// Generate two random numbers between 1 and 9
+	int multiplication_problem_level_1(int* score) {
 		int num1 = rand() % 9 + 1;
 		int num2 = rand() % 9 + 1;
+
 		int answer = num1 * num2;
+		printf("The problem is %d * %d, what is the answer? \n", num1, num2);
+		int responce;
+		scanf("%d", &responce);
+		if (answer == responce)
+		{
+			score += 5;
+			printf("Correct! \n");
+			return 1;
+		}
+		else
+		{
+			printf("Sorry that incorrect!\n");
+			return 0;
+		}
+	}
+	int multiplication_problem_level_2(int* score) {
+		int num1 = rand() % 99 + 1;
+		int num2 = rand() % 99 + 1;
 
-		// Starts the timer 
-		clock_t start = clock();
+		int answer = num1 * num2;
+		printf("The problem is %d * %d, what is the answer? \n", num1, num2);
+		int responce;
+		scanf("%d", &responce);
+		if (answer == responce)
+		{
+			score += 10;
+			printf("Correct! \n");
+			return 1;
+		}
+		else
+		{
+			printf("Sorry that incorrect!\n");
+			return 0;
+		}
+	}
+	int multiplication_problem_level_3(int* score) {
+		int num1 = rand() % 999 + 1;
+		int num2 = rand() % 999 + 1;
 
-		char input[100];
-		int guess, result;
-		int attempts = 0;
-
-		printf("What is %d * %d? You have 30 seconds to answer.\n", num1, num2);
-
-		// Timer checks to see if 30 seconds have passed
-		while (1) {
-			clock_t difference = clock() - start;
-			int elapsed = difference / CLOCKS_PER_SEC;
-			if (elapsed >= 30) {  // Changed time limit to 30 seconds
-				printf("Time's up! Better luck next time!\n");
-				break;
-			}
-
-			// Prompt user to enter the answer  
-			printf("Enter your answer (remaining time: %d seconds): ", 30 - elapsed);  // Updated remaining time display
-			fgets(input, sizeof(input), stdin);  // Read input as a string
+		int answer = num1 * num2;
+		printf("The problem is %d * %d, what is the answer? \n", num1, num2);
+		int responce;
+		scanf("%d", &responce);
+		if (answer == responce)
+		{
+			score += 20;
+			printf("Correct! \n");
+			return 1;
+		}
+		else
+		{
+			printf("Sorry that incorrect!\n");
+			return 0;
 		}
 	}
