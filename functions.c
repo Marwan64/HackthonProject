@@ -17,7 +17,9 @@ void playGame()
 			if (select == 2) { 
 				if (subtraction_problem_level_1(&score) == 0) wrong_answer++;
 			}
-			if (select == 3) {}
+			if (select == 3) {
+				if (multiplication_problem_level_1(score) == 0) wrong_answer++;
+			}
 		}
 		else if (score < 75) {
 			int select = rand() % 3 + 1;
@@ -27,8 +29,10 @@ void playGame()
 			if (select == 2) {
 				if (subtraction_problem_level_2(&score) == 0) wrong_answer++;
 			}
-			if (select == 3) {}
-		}
+			if (select == 3) {
+				if (multiplication_problem_level_2(score) == 0) wrong_answer++;
+				}
+			}
 		else{
 			int select = rand() % 3 + 1;
 			if (select == 1) {
@@ -37,9 +41,11 @@ void playGame()
 			if (select == 2) {
 				if (subtraction_problem_level_3(&score) == 0) wrong_answer++;
 			}
-			if (select == 3) {}
+			if (select == 3) {
+				if (multiplication_problem_level_3(score) == 0) wrong_answer++;
+			}
 		}
-		//logic must be filled out
+		
 	}
 }
 
