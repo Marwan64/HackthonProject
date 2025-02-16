@@ -19,7 +19,7 @@ void playGame()
 			}
 			if (select == 3) {}
 		}
-		if (score < 75) {
+		if (score < 75 && score > 25) {
 			int select = rand() % 3 + 1;
 			if (select == 1) {
 				if (addition_problem_level_2(&score) == 0) wrong_answer++;
