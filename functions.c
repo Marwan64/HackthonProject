@@ -18,7 +18,7 @@ void playGame()
 				if (subtraction_problem_level_1(&score) == 0) wrong_answer++;
 			}
 			if (select == 3) {
-				if (multiplication_problem_level_1(score) == 0) wrong_answer++;
+				if (multiplication_problem_level_1(&score) == 0) wrong_answer++;
 			}
 		}
 		else if (score < 75) {
@@ -30,7 +30,7 @@ void playGame()
 				if (subtraction_problem_level_2(&score) == 0) wrong_answer++;
 			}
 			if (select == 3) {
-				if (multiplication_problem_level_2(score) == 0) wrong_answer++;
+				if (multiplication_problem_level_2(&score) == 0) wrong_answer++;
 				}
 			}
 		else{
@@ -42,7 +42,7 @@ void playGame()
 				if (subtraction_problem_level_3(&score) == 0) wrong_answer++;
 			}
 			if (select == 3) {
-				if (multiplication_problem_level_3(score) == 0) wrong_answer++;
+				if (multiplication_problem_level_3(&score) == 0) wrong_answer++;
 			}
 		}
 		
