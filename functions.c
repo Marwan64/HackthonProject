@@ -11,20 +11,32 @@ void playGame()
 		
 		if (score < 25) {
 			int select = rand() % 3 + 1;
-			if (select == 1) { addition_problem_level_1(&score); }
-			if (select == 2) { subtraction_problem_level_1(&score); }
+			if (select == 1) { 
+				if (addition_problem_level_1(&score) == 0) wrong_answer++;
+			}
+			if (select == 2) { 
+				if (subtraction_problem_level_1(&score) == 0) wrong_answer++;
+			}
 			if (select == 3) {}
 		}
 		if (score < 75) {
 			int select = rand() % 3 + 1;
-			if (select == 1) { addition_problem_level_2(&score); }
-			if (select == 2) { subtraction_problem_level_2(&score); }
+			if (select == 1) {
+				if (addition_problem_level_2(&score) == 0) wrong_answer++;
+			}
+			if (select == 2) {
+				if (subtraction_problem_level_2(&score) == 0) wrong_answer++;
+			}
 			if (select == 3) {}
 		}
 		else{
 			int select = rand() % 3 + 1;
-			if (select == 1) { addition_problem_level_3(&score); }
-			if (select == 2) { subtraction_problem_level_3(&score); }
+			if (select == 1) {
+				if (addition_problem_level_3(&score) == 0) wrong_answer++;
+			}
+			if (select == 2) {
+				if (subtraction_problem_level_3(&score) == 0) wrong_answer++;
+			}
 			if (select == 3) {}
 		}
 		//logic must be filled out
