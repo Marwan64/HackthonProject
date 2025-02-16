@@ -73,7 +73,7 @@ int addition_problem_level_1(int* score) {
 	int num2 = rand() % 9 + 1;
 
 	int answer = num1 + num2;
-	printf("The problem is %d + %d, what is the answer? \n");
+	printf("The problem is %d + %d, what is the answer? \n", num1, num2);
 	int responce;
 	scanf("%d", &responce);
 	if (responce == answer) {
@@ -92,7 +92,7 @@ int addition_problem_level_2(int* score) {
 	int num2 = rand() % 99 + 1;
 
 	int answer = num1 + num2;
-	printf("The problem is %d + %d, what is the answer? \n");
+	printf("The problem is %d + %d, what is the answer? \n", num1, num2);
 	int responce;
 	scanf("%d", &responce);
 	if (responce == answer) {
@@ -187,7 +187,7 @@ int subtraction_problem_level_3(int* score) {
 	}
 }
 
-	int multiplication_problem_level_1(int* score) {
+int multiplication_problem_level_1(int* score) {
 		int num1 = rand() % 9 + 1;
 		int num2 = rand() % 9 + 1;
 
@@ -207,7 +207,7 @@ int subtraction_problem_level_3(int* score) {
 			return 0;
 		}
 	}
-	int multiplication_problem_level_2(int* score) {
+int multiplication_problem_level_2(int* score) {
 		int num1 = rand() % 99 + 1;
 		int num2 = rand() % 99 + 1;
 
@@ -227,7 +227,7 @@ int subtraction_problem_level_3(int* score) {
 			return 0;
 		}
 	}
-	int multiplication_problem_level_3(int* score) {
+int multiplication_problem_level_3(int* score) {
 		int num1 = rand() % 999 + 1;
 		int num2 = rand() % 999 + 1;
 

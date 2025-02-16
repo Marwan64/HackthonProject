@@ -11,7 +11,7 @@ int main(void) {
             get_choice();
 
         } while (choice < 1 || choice > 2);
-    }
+    
 
     int display_menu() {
         printf("1. Playing Mental Math");
