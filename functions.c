@@ -1,5 +1,18 @@
 #include "Header.h"
 
+
+int display_menu() {
+	printf("1. Playing Mental Math");
+	printf("2. Exist");
+}
+
+//TODO Marwarn must complete his code
+int get_choice() {
+	int choice = 0;
+	scanf("%d", &choice);
+	return 0;
+}
+
 int addition_problem_level_1(int* score) {
 	int num1 = rand() % 9 + 1;
 	int num2 = rand() % 9 + 1;
