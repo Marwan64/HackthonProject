@@ -77,7 +77,7 @@ int addition_problem_level_1(int* score) {
 	int responce;
 	scanf("%d", &responce);
 	if (responce == answer) {
-		score += 5;
+		*score += 5;
 		printf("Correct! \n");
 		return 1;
 	}
@@ -96,7 +96,7 @@ int addition_problem_level_2(int* score) {
 	int responce;
 	scanf("%d", &responce);
 	if (responce == answer) {
-		score += 10;
+		*score += 10;
 		printf("Correct! \n");
 		return 1;
 	}
@@ -115,7 +115,7 @@ int addition_problem_level_3(int* score) {
 	int responce;
 	scanf("%d", &responce);
 	if (responce == answer) {
-		score += 20;
+		*score += 20;
 		printf("Correct! \n");
 		return 1;
 	}
@@ -136,7 +136,7 @@ int subtraction_problem_level_1(int* score) {
 	scanf("%d", &responce);
 	if (answer == responce)
 	{
-		score += 5;
+		*score += 5;
 		printf("Correct! \n");
 		return 1;
 	}
@@ -156,7 +156,7 @@ int subtraction_problem_level_2(int* score) {
 	scanf("%d", &responce);
 	if (answer == responce)
 	{
-		score += 10;
+		*score += 10;
 		printf("Correct! \n");
 		return 1;
 	}
@@ -176,7 +176,7 @@ int subtraction_problem_level_3(int* score) {
 	scanf("%d", &responce);
 	if (answer == responce)
 	{
-		score += 20;
+		*score += 20;
 		printf("Correct! \n");
 		return 1;
 	}
@@ -197,7 +197,7 @@ int multiplication_problem_level_1(int* score) {
 		scanf("%d", &responce);
 		if (answer == responce)
 		{
-			score += 5;
+			*score += 5;
 			printf("Correct! \n");
 			return 1;
 		}
@@ -217,7 +217,7 @@ int multiplication_problem_level_2(int* score) {
 		scanf("%d", &responce);
 		if (answer == responce)
 		{
-			score += 10;
+			*score += 10;
 			printf("Correct! \n");
 			return 1;
 		}
@@ -237,7 +237,7 @@ int multiplication_problem_level_3(int* score) {
 		scanf("%d", &responce);
 		if (answer == responce)
 		{
-			score += 20;
+			*score += 20;
 			printf("Correct! \n");
 			return 1;
 		}
