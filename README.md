@@ -1,5 +1,5 @@
-Mental Math
-Authors: Marwan, Alexander, Mikhael, Yunhyeong
+Mental Meth
+Authors: Marwan Warnick, Alexander Minascurta, Mikhael Morris, Yunhyeong Lee
 Date: 2/15/2025
 
 This is a game that has users use mental math to complete mth problems to rack up points and learn math at the same time.
